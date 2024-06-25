@@ -39,7 +39,7 @@ export default function accordion(itemList){
     })
 
     return `
-        <div class="dropdown">
+        <div class="accordion">
             ${output}
         </div>
     `

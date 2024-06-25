@@ -6,7 +6,10 @@
 
 
 
-.accordion-item-title{
+.accordion{
 
-    
+    border:1px solid red;
+
 }
+
+

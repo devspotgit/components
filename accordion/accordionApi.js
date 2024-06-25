@@ -34,7 +34,7 @@ export default function accordion(itemList){
 
     let output = ``
 
-    itemList.foreach(item => {
+    itemList.forEach(item => {
         output+=accordionItem(item)
     })
 

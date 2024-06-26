@@ -9,7 +9,7 @@ function selectItem(item){
 }
 
 
-export default function select(itemList){
+export function select(itemList){
 
     let output = ``
 

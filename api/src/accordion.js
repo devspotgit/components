@@ -30,7 +30,7 @@ function accordionItem(item){
     `
 }
 
-export default function accordion(itemList){
+export function accordion(itemList){
 
     let output = ``
 

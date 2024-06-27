@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+@scope(.accordion){
+
+   
+
+    :scope{
+       
+       
+
+    }
+
+    .accordion-item-content{
+        margin:0px;
+        height:0px;
+        overflow-y:hidden;
+        transition:height 0.5s;
+        padding-inline:10px;
+    }
+
+    .accordion-item{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .accordion-item-title{
+        cursor:pointer;
+        padding:10px;
+        border:1px solid grey;
+    }
+
+    .accordion-item[status="active"]  .accordion-item-content{
+        height:var(--accordion-item-content-height);
+    }
+
+
+
+
+}
+
+
+

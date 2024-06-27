@@ -23,7 +23,7 @@ function accordionItemContent(content){
 function accordionItem(item){
 
     return `
-        <div class="accordion-item">
+        <div class="accordion-item" status="inactive">
             ${accordionItemTitle(item.title)}
             ${accordionItemContent(item.content)}
         </div>

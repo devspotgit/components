@@ -1,9 +1,6 @@
 
 
 
-
-
-
 export function accordion(){
 
     document.querySelectorAll('.accordion').forEach(item => {
@@ -19,22 +16,16 @@ export function accordion(){
                     event.target.parentNode.setAttribute('status', 'inactive')
                 }
 
-                // console.log('here')
-
                 item.querySelectorAll('.accordion-item').forEach(el => {
 
                     if(el != event.target.parentNode && el.getAttribute('status') == 'active' ) el.setAttribute('status', 'inactive')
 
-                    // console.log(el.getAttribute('status'))
-                
                 })
 
-              
-                
+        
             }
 
         })
-
 
     })
 

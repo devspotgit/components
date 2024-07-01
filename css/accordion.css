@@ -1,0 +1,78 @@
+
+
+
+
+
+@scope(ds-accordion){
+
+    :scope{
+        display:flex;
+        flex-direction:column;
+    }
+
+    > ds-item{
+        display:flex;
+        flex-direction:column;
+    }
+
+    > ds-item > ds-title:first-child{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px;
+        background:var(--accordion-item-title-background);
+        color:var(--accordion-item-title-color);
+        cursor:pointer;
+    }
+
+    > ds-item > ds-title:first-child:hover{
+        background:var(--accordion-item-title-hover-background);
+    }
+
+    > ds-item > ds-title:first-child:after{
+        content:"";
+        width:30px;
+        height:30px;
+        background:var(--accordion-item-title-color);
+        mask-image:url("https://img.icons8.com/android/24/plus.png");
+        mask-repeat:no-repeat;
+        mask-position:center;
+        mask-size:55%;
+    }
+
+    > ds-item[status="active"] > ds-title:first-child:after{
+        mask-image:url("https://img.icons8.com/material-two-tone/24/minus--v1.png");
+    }
+
+    > ds-item[status="inactive"]:not(:last-child) > ds-title:first-child{
+        border-bottom:1px solid var(--accordion-item-separator-color);
+    } 
+
+    > ds-item > ds-content:nth-child(2){
+        padding-block:0;
+        padding-inline:10px;
+        background:var(--accordion-item-content-background);
+        height:0px;
+        overflow-y:hidden;
+        transition:all 0.5s;
+    }
+
+    > ds-item[status="active"] > ds-content:nth-child(2){
+        height:var(--accordion-item-content-height);
+        padding-block:10px;
+    }
+
+    > :not(ds-item){
+        display:none;
+    }
+
+    > ds-item > :not(ds-title:first-child):not(ds-content:nth-child(2)){
+        display:none;
+    }
+
+   
+}
+
+
+
+

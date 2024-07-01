@@ -6,7 +6,7 @@ const path = require("path")
 
 module.exports = {
     entry: {
-      main: path.resolve(__dirname, 'static/static.js')
+      main: path.resolve(__dirname, '/lib.js')
     },
     module: {
       rules: [
@@ -27,8 +27,8 @@ module.exports = {
       ],
     },
     output: {
-      filename: 'static.js',
-      path: path.resolve(__dirname, 'static/build/')
+      filename: 'components.js',
+      path: path.resolve(__dirname, '/')
     }
 }
 

@@ -1,0 +1,22 @@
+
+
+
+:root{
+    
+    /*accordion variables*/
+    --accordion-item-title-background:rgb(235, 179, 26);
+    --accordion-item-title-hover-background:rgb(227, 191, 93);
+    --accordion-item-content-background:rgb(227, 226, 222);
+    --accordion-item-title-color:black;
+    --accordion-item-content-height:100px;
+    --accordion-item-separator-color:grey;
+
+
+    /*select variables*/
+    --select-width:200px;
+    --select-item-background:rgb(235, 179, 26);
+    --select-item-hover-background:rgb(227, 191, 93);
+    --select-title-background:rgb(227, 226, 222);
+
+
+}

@@ -3,20 +3,20 @@
 
 :root{
     
-    /*accordion variables*/
-    --accordion-item-title-background:rgb(235, 179, 26);
-    --accordion-item-title-hover-background:rgb(227, 191, 93);
-    --accordion-item-content-background:rgb(227, 226, 222);
-    --accordion-item-title-color:black;
-    --accordion-item-content-height:100px;
-    --accordion-item-separator-color:grey;
+   /* ds-accordion */
+   --accordion-item-title-background:rgb(240, 213, 38);
+   --accordion-item-title-hover-background:rgb(222, 204, 91);
+   --accordion-item-title-color:black;
+   --accordion-item-title-font-weight:normal;
+   --accordion-item-title-font-family:inherit;
 
-
-    /*select variables*/
-    --select-width:200px;
-    --select-item-background:rgb(235, 179, 26);
-    --select-item-hover-background:rgb(227, 191, 93);
-    --select-title-background:rgb(227, 226, 222);
+   --accordion-item-content-background:rgb(230, 228, 220);
+   --accordion-item-content-color:black;
+   --accordion-item-content-height:100px;
+   --accordion-item-content-font-weight:normal;
+   --accordion-item-content-font-family:inherit;
+   
+   --accordion-item-separator-color:grey;
 
 
 }

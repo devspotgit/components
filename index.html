@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/select.css"/>
+   
+    <style>
+      ds-accordion:first-of-type{
+        --accordion-item-title-background:red;
+      }
+
+    </style>
 </head>
-<body>
+<body> 
 
-    <ds-select>
+    <ds-accordion>
 
-        <ds-item>Mango</ds-item>
+        <ds-accordion-item>Mango</ds-accordion-item>
     
-        <ds-item>Tomato</ds-item>
+        <ds-accordion-item>Tomato</ds-accordion-item>
 
-        <ds-item>Pinuts</ds-item>
+        <ds-accordion-item>Pinuts</ds-accordion-item>
     
-    </ds-select>
+    </ds-accordion>
 
     <br><br>
 
-    <!-- <ds-select>
+    <ds-accordion>
 
-        <ds-item>Mango</ds-item>
+        <ds-accordion-item>Mango</ds-accordion-item>
     
-        <ds-item>Tomato</ds-item>
+        <ds-accordion-item>Tomato</ds-accordion-item>
 
-        <ds-item>Pinuts</ds-item>
+        <ds-accordion-item>Pinuts</ds-accordion-item>
     
-    </ds-select> -->
+    </ds-accordion>
 
 
-    <script src="/js/select.js"></script>
+    <link rel="stylesheet" href="/css/variables.css">
+    <script src="/js/accordion.js"></script>
+
+    <!-- <script>
+        console.log(document.querySelector('ds-accordion:first-child').getData(3,'title'))
+
+        document.querySelector('ds-accordion:first-child').setData(3,'title','Fruits')
+
+        document.querySelector('ds-accordion:nth-child(2)').setData(1,'title','Fruits')
+    </script> -->
+     
     
 </body>
 </html>

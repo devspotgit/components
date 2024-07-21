@@ -1,7 +1,7 @@
 
 
 
-class select extends HTMLElement{
+class component extends HTMLElement{
 
     #data={}
     #shadow
@@ -69,7 +69,7 @@ class select extends HTMLElement{
 }
 
 
-customElements.define("ds-select", select)
+customElements.define("custom-component", component)
 
 
 
